@@ -28,7 +28,7 @@ export const createCheckoutSession = async (req, res) => {
       line_items: [
         {
           price_data: {
-            currency: "inr",
+            currency: "Indian",
             product_data: {
               name: course.courseTitle,
               images: [course.courseThumbnail],
@@ -46,7 +46,7 @@ export const createCheckoutSession = async (req, res) => {
         userId: userId,
       },
       shipping_address_collection: {
-        allowed_countries: ["IN"], // Optionally restrict allowed countries
+        allowed_countries: ["Indian"], // Optionally restrict allowed countries
       },
     });
 
